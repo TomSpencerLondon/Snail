@@ -2,15 +2,16 @@ class Snail {
   move(board){
     let numberOfColumns = board.length
     let numberOfRows = board[0].length
-    let startingRowIndex = 0;
-    let startingColumnIndex = 0;
+    let rowIndex = 0;
+    let columnIndex = 0;
+    let iterator = 0;
 
     console.log(numberOfColumns);
     console.log(numberOfRows);
 
-    while(startingRowIndex < numberOfRows && startingColumnIndex < numberOfRows){
-       startingRowIndex += 1;
-       startingColumnIndex += 1;
+    while(rowIndex < numberOfRows && columnIndex < numberOfRows){
+       rowIndex += 1;
+       columnIndex += 1;
     }
 
     if (board.length > 1){
